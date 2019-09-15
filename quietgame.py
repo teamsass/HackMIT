@@ -41,7 +41,7 @@ class Yell:
         self.xhigh = 0
         self.ylow = 0
         self.yhigh = 0
-        self.totalc = 10
+        self.totalc = 20
         self.par = 0
 
         self.FORMAT = pyaudio.paFloat32
