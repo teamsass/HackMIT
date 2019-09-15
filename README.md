@@ -8,7 +8,10 @@ If Python 3 is installed on your computer, then run
 ```
 python3 quietgame.py
 ```
-Otherwise, go into bin and find the file named "quietgame" and double click
+Otherwise, install Python 3 and then run
+```
+python3 quietgame.py
+```
 
 ### Controls
 
