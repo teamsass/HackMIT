@@ -22,7 +22,10 @@ class Yell:
         self.leveldata = [[0, 0, 0, 0, 0, 0, 0],
                             [350, 525, 325, 400, 125, 200, 1], 
                             [275, 500, 425, 500, 150, 225, 2],
-                            [200, 575, 375, 450, 550, 625, 4]]
+                            [200, 575, 375, 450, 550, 625, 4],
+                            [175, 175, 575, 650, 575, 650, 3],
+                            [375, 550, 350, 425, 175, 250, 2],
+                            [175, 175, 550, 625, 550, 625, 3]]
         self.score = 0
 
         self.image = pygame.image.load("1.png")
@@ -38,7 +41,7 @@ class Yell:
         self.xhigh = 0
         self.ylow = 0
         self.yhigh = 0
-        self.totalc = 7
+        self.totalc = 10
         self.par = 0
 
         self.FORMAT = pyaudio.paFloat32
@@ -97,7 +100,7 @@ class Yell:
     def marker(self, x, y):
         self.screen.blit(self.markerimg, (x-16, y-16))
     def levelup(self):
-        if self.level == 3:
+        if self.level == 6:
             start = time.time()
             largeText = pygame.font.Font("ComicSansMS3.ttf", 36)
             endTextSurf, endTextRect = self.text_objects("were you quiet???", largeText)
